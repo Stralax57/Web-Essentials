@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afbeelding</title>
+</head>
+<body>
+    <img src="images/image.jpg" 
+    alt="Descriptie van afbeelding"
+    title="Wat te zeggen over afbeelding"
+    width="600"
+    height="450"
+    loading="lazy">
+</body>
+</html>
+
+<!-- 
+src (source): relatief absolute pad naar afbeeldingsbestand (verplicht)
+alt (alternatieve text): Beschrijvende tekst indean de afbeelding niet laadt of gelezen wordt door een screenreader (verplicht voor toegankelijkheid/SEO)
+title: optionele tootip-tekst die kan verschijnen
+width/height: intrinsieke afmetingen in pxls (zonder px vermelding). Browser reserveert direct de juiste ruimte, voorkomt cumulative layout.
+loading="lazy/eager": instrueert de browser om de afbeelding pas in te laden wanneer deze bijna in de zichtbare viewport komt (laadsnelheid)
+
+img is een inline-replacement element: staat op dezelfde regel als de tekst & volgt tekstbasislijn, maar accepteerd expliciete afmetingen (in width en height). Meerdere afbeeldingen na elkaar staan naast elkaar als de schermbreedte het toelaat.
+Dit is ideaal voor kleine iconen tussen tekst, voor grotere afbeeldingen: aanpassen met css.
+-->
