@@ -1,0 +1,40 @@
+<!-- <!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <img src="laptop.jpg">
+        <img src="star-icon.png" title="">
+    </p>
+</body>
+</html> -->
+<!-- 
+fouten analyse: bijde missen het alt element, width en height (cumulative layour shift (CLS))
+voor decoratieve afbeeldingen kun je een leef alt attribuut gebruiken, hetzelfde voor title.
+-->
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- voorbeeld: -->
+    <figure>
+      <img
+        src="laptop.jpg"
+        alt="Draagbare laptop op een houten bureau"
+        width="800"
+        height="500"
+      />
+      <figcaption>Figuur 1: Sfeerbeeld van de laptophouder.</figcaption>
+    </figure>
+    <img src="ster-icoon.png" alt="" width="20" height="20" />
+  </body>
+</html>
